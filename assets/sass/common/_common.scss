@@ -1,0 +1,51 @@
+body {
+    font-family: $fnt1;
+    font-size: 14px;
+    color: $clr-default;
+    background-color: $clr-white;
+}
+
+a {
+    transition: 0.2s;
+    transition: all 0.2s ease;
+    color: $clr-theme;
+    &:hover {
+        text-decoration: none;
+        color: $clr-dark;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.cm-not-in-page {
+    left: -99999px;
+    position: absolute;
+    top: -99999px;
+}
+
+.cm-dot {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bg-overlay{
+    position: relative;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(21, 31, 66 ,0.70);
+    }
+}

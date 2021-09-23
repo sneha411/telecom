@@ -1,0 +1,35 @@
+.bannr-container{
+    overflow: hidden;
+}
+.bs-banner{
+    position: relative;
+    // height: 100vh;
+    height: 552px;
+    width: 100%;
+    #canvas{
+        height:100vh;
+    }
+    .content-container{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        z-index: 2;
+    }
+}
+// @media only screen and (max-width: $desktop-breakpoint) {
+//     .bs-banner{
+//         &.set-bg{
+//             background-position: center!important;
+//             &.service-bg{
+//                 background-position: initial!important;
+//             }
+//         }
+//     }
+// }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .bs-banner{
+        height: 510px;
+    }
+}

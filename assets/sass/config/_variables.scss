@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,900&display=swap');
+
+$clr-white:#ffffff;
+$clr-theme:#42a5f6;
+$clr-default:#151515;
+$clr-blue:#41a2db;
+$clr-gray: #f5f5f5;
+$clr-black: #000000;
+$clr-light-blue:#eef8fe;
+$clr-dark:#151F42;
+$clr-para:#485760;
+
+/* font weight */
+
+$font-regular:400;
+$font-black:900;
+$font-medium:600;
+$font-bold:700;
+
+$fnt1:'Poppins',
+sans-serif;
+
+/* breakpoints */
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint:992px;
+$desktop-breakpoint:1024px;

@@ -1,0 +1,28 @@
+.bs-btn{
+    background-color: $clr-theme;
+    color: $clr-white;
+    display: block;
+    min-width: 160px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid $clr-theme;
+    padding: 9px 0;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    &.typ-submit{
+        margin: 0 auto;
+    }
+    &.typ-link{
+        background-color: transparent;
+        color: $clr-white;
+        padding: 0;
+        border: none;
+        font-size: 18px;
+        position: relative;
+        &:hover{
+            color: $clr-white;
+        }
+    }
+}

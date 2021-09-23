@@ -1,0 +1,27 @@
+.mod-counter{
+    .counter-bx {
+        text-align: center;
+        .counter-icon{
+            i{
+                font-size: 50px;
+                color: $clr-blue;
+            }
+        }
+        .counter {
+            font-size: 50px;
+            font-weight: 600;
+            color:$clr-black;
+        }
+        .counter-name {
+            font-size: 18px;
+            color: rgba(72, 87, 96, 0.8);
+        }
+    }
+}
+@media only screen and (max-width:$mobile-breakpoint) {
+    .mod-counter{
+        .counter-bx {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,300,500,700,900' rel='stylesheet' type='text/css'>
+    <title>test</title>
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .logo {
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 8px;
+        }
+        
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .siteContainer {
+            font-size: 18px;
+            line-height: 1.3rem;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        
+        .siteContainer h4 {
+            color: #262262;
+            font-size: 95%;
+            font-weight: cm-bold;
+            margin: 10px 0;
+        }
+        
+        .siteContainer h4 a {
+            color: #262262;
+        }
+        
+        .siteContainer ul {
+            background: url("assets/temp_Assest/siteMapFldrStr.png") repeat-y scroll 0 0 transparent;
+            margin-bottom: 15px;
+        }
+        
+        .siteContainer ul li {
+            background: url("assets/temp_Assest/siteMapFldrStrLn.png") no-repeat scroll 0 10px transparent;
+            color: #262262;
+            font-size: 90%;
+            font-weight: normal;
+            list-style: none outside none;
+            margin-left: -8px;
+            min-height: 24px;
+            padding-left: 34px;
+            position: relative;
+        }
+        
+        .lbl a {
+            font-weight: cm-bold;
+        }
+        
+        .siteContainer ul li a {
+            color: #262262;
+            display: inline-block;
+            padding: 7px 0;
+        }
+        
+        .siteContainer ul li a.done {
+            color: #009245;
+        }
+        
+        .siteContainer ul li a:hover,
+        .siteContainer h4 a:hover {
+            color: #f7941e;
+        }
+        
+        li .icn {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url("assets/temp_Assest/fileLst.png") no-repeat 0 0;
+            left: 2px;
+            top: 6px;
+        }
+        
+        li.opn .lbl .icn {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url("assets/temp_Assest/folderIcnSprit.png") no-repeat 0 -32px;
+            left: 2px;
+            top: 6px;
+        }
+        
+        li.close .lbl .icn {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url("assets/temp_Assest/folderIcnSprit.png") no-repeat 0 0;
+            left: 2px;
+            top: 6px;
+        }
+        
+        @media only screen and (max-width: 1024px) {
+            .hide-for-mobile {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="logo" src="assets/images/logo-green.svg" alt="logo" width="100px">
+    <div class="siteContainer">
+        <ul class="custAcc">
+            <li class="opn">
+                <div class="lbl">
+                    <a href="home.php">Home</a>
+                    <span class="icn"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="js/libraries/libraries.js"></script>
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $(".lbl").parent().addClass("opn")
+            $(".custAcc a").parent().append("<span class='icn'></span>")
+            $(".lbl").click(function() {
+                if ($(this).parent().hasClass("opn") == true) {
+                    $(this).parent().removeClass("opn");
+                    $(this).parent().addClass("close");
+                    $(this).parent().find("> .subMenu").stop(true, true).fadeOut()
+                } else {
+                    $(this).parent().removeClass("close");
+                    $(this).parent().addClass("opn");
+                    $(this).parent().find("> .subMenu").stop(true, true).fadeIn()
+                }
+            })
+
+        })
+    </script>
+</body>
+
+</html>

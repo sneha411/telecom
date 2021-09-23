@@ -1,0 +1,50 @@
+/*
+  @Author : CreativeWebo
+  @Project : SuiiNuii
+  @Dev : Sagar
+  @Date : 29/01/2019;
+*/
+
+// Core variables and mixins
+@import "plugins/bootstrap/bootstrap";
+
+/*font awesome 5.7.1*/
+
+// @import "fonts/font";
+
+/* config */
+
+@import "config/mixin";
+@import "config/variables";
+
+/* common */
+
+@import "common/common";
+
+/* base include */
+
+@import "base/bs-header";
+@import "base/bs-footer";
+@import "base/bs-swiper";
+@import "base/bs-heading";
+@import "base/bs-form";
+@import "base/bs-btn";
+@import "base/bs-banner";
+@import "base/bs-box";
+
+/* layout */
+@import "layout/lyt-section";
+
+
+/* pages */
+
+
+/* modules */
+@import "module/mod-counter";
+@import "module/mod-newsletter";
+@import "module/mod-gotobtm";
+
+
+/* plugins */
+@import "plugins/swiper";
+@import "plugins/animate";

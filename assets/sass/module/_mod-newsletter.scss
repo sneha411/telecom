@@ -1,0 +1,40 @@
+.mod-newsletter{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    p{
+        font-size: 18px;
+        color: $clr-black;
+        font-weight: $font-medium;
+        margin-bottom: 0;
+        margin-right: 40px;
+        min-width: 33.33%;
+        text-align: right;
+    }
+    .bs-form{
+        min-width: 33.33%;
+        margin-right: 40px;
+        .form-group{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .mod-newsletter{
+        display: block;
+        p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+        }
+        .bs-form{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .bs-btn{
+            margin: 0 auto;
+        }
+    }
+}
